@@ -97,7 +97,7 @@ public class RoutingResourceTable implements ResourceTable {
 
   public void receive(Visitor visitor) {
     for (PackageResourceTable resourceTable : resourceTables.values()) {
-      resourceTable.data.receive(visitor);
+      resourceTable.receive(visitor);
     }
   }
 
