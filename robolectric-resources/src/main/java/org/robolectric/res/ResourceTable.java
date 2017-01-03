@@ -27,8 +27,6 @@ public interface ResourceTable {
 
   boolean hasValue(ResName resName, String qualifiers);
 
-  void addResource(int resId, String type, String name);
-
   interface Visitor<T> {
 
     void visit(ResName key, Iterable<T> values);
